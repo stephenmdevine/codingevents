@@ -12,11 +12,13 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Name</th>
+            <th>Name</th><th>Description</th><th>Address</th>
         </tr>
     </thead>
-    <tr th:each="event : ${events}">
-        <td th:text="${event}"></td>
+    <tr th:each="item : ${events}">
+        <td th:text="${item.key}"></td>
+        <td th:text="${item.value}"></td>
+        <td th:replace="fragments :: address"></td>
     </tr>
 </table>
 
