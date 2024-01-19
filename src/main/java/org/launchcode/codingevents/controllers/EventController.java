@@ -23,6 +23,7 @@ public class EventController {
         events.put("Menteaship","A fun meetup for connecting with mentors");
         events.put("Code With Pride","A fun meetup sponsored by LaunchCode");
         events.put("Javascripty", "An imaginary meetup for Javascript developers");
+        events.put("Another One", "An imaginary meetup for developers");
         model.addAttribute("events", events);
         return "events/index";
     }
